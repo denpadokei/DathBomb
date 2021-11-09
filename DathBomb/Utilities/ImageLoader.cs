@@ -19,7 +19,6 @@ namespace DathBomb.Utilities
         private Texture2D CreateTextuer2D(byte[] datas, ImageExtention extention)
         {
             this.GetImageSize(datas, extention, out var width, out var height);
-            Logger.Debug($"width : {width}, height : {height}");
             var result = new Texture2D(width, height, TextureFormat.ARGB32, false, true);
             result.LoadImage(datas);
             return result;

@@ -171,7 +171,6 @@
     <Compile Include="Configuration\PluginConfig.cs" />
     <Compile Include="DathBombController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Staics\CommandKey.cs" />
     <Compile Include="Utilities\ColorUtil.cs" />
     <Compile Include="Utilities\CustomNoteUtil.cs" />
     <Compile Include="Utilities\ImageLoader.cs" />

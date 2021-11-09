@@ -30,27 +30,17 @@ namespace DathBomb
         /// [Init] methods that use a Constructor or called before regular methods like InitWithConfig.
         /// Only use [Init] with one Constructor.
         /// </summary>
-        public void Init(IPALogger logger, Zenjector zenjector)
+        public void Init(IPALogger logger, Config conf, Zenjector zenjector)
         {
             Instance = this;
             Log = logger;
             Log.Info("DathBomb initialized.");
+            Configuration.PluginConfig.Instance = conf.Generated<Configuration.PluginConfig>();
+            Log.Debug("Config loaded");
             zenjector.OnGame<DathBombGameInstaller>();
             zenjector.OnMenu<DathBombMenuInstaller>();
             harmony = new Harmony(HARMONY_ID);
         }
-
-        #region BSIPA Config
-        //Uncomment to use BSIPA's config
-        /*
-        [Init]
-        public void InitWithConfig(Config conf)
-        {
-            Configuration.PluginConfig.Instance = conf.Generated<Configuration.PluginConfig>();
-            Log.Debug("Config loaded");
-        }
-        */
-        #endregion
 
         [OnStart]
         public void OnApplicationStart()
