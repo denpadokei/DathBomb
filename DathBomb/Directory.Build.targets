@@ -63,6 +63,9 @@
       <OldZips Include="$(DestinationDirectory)$(AssemblyName)*.zip"/>
     </ItemGroup>
     <Copy SourceFiles="$(OutputAssemblyName).dll" DestinationFiles="$(ArtifactDestination)\Plugins\$(AssemblyName).dll" />
+    <Copy SourceFiles="$(OutDir)UserData\DathBombFontAssets\Main\mplus-1m-medium sdf.assets" DestinationFiles="$(ArtifactDestination)\UserData\DathBombFontAssets\Main\mplus-1m-medium sdf.assets" />
+    <Copy SourceFiles="$(OutDir)UserData\DathBomb\Staff.json" DestinationFiles="$(ArtifactDestination)\UserData\DathBomb\Staff.json" />
+    <MakeDir Directories="$(ArtifactDestination)\UserData\DathBomb\Images"></MakeDir>
     <Message Text="PluginVersion: $(PluginVersion), AssemblyVersion: $(AssemblyVersion), GameVersion: $(GameVersion)" Importance="high" />
     <Delete Files="@(OldZips)" TreatErrorsAsWarnings="true" ContinueOnError="true" />
     <ZipDir SourceDirectory="$(ArtifactDestination)" DestinationFile="$(DestinationDirectory)$(ArtifactName).zip" />

@@ -183,6 +183,12 @@
     <None Include="Directory.Build.props" Condition="Exists('Directory.Build.props')" />
     <None Include="Directory.Build.targets" Condition="Exists('Directory.Build.targets')" />
     <None Include="DathBomb.csproj.user" Condition="Exists('DathBomb.csproj.user')" />
+    <None Include="UserData\DathBombFontAssets\Main\mplus-1m-medium sdf.assets">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="UserData\DathBomb\Staff.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Views\SettingViewController.bsml" />
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +197,40 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UserData\DathBomb\Images\BK／Ater=クロ.png" />
+    <Content Include="UserData\DathBomb\Images\Charlotte＠あうりん.png" />
+    <Content Include="UserData\DathBomb\Images\haseri.png" />
+    <Content Include="UserData\DathBomb\Images\Kirika.png" />
+    <Content Include="UserData\DathBomb\Images\Kylon.png" />
+    <Content Include="UserData\DathBomb\Images\Mozory.png" />
+    <Content Include="UserData\DathBomb\Images\narukuni.png" />
+    <Content Include="UserData\DathBomb\Images\nokingood.png" />
+    <Content Include="UserData\DathBomb\Images\shana.png" />
+    <Content Include="UserData\DathBomb\Images\T2.png" />
+    <Content Include="UserData\DathBomb\Images\いずみなグループ.png" />
+    <Content Include="UserData\DathBomb\Images\えびフライ.png" />
+    <Content Include="UserData\DathBomb\Images\かつや.png" />
+    <Content Include="UserData\DathBomb\Images\がらい.png" />
+    <Content Include="UserData\DathBomb\Images\きずなぎ.png" />
+    <Content Include="UserData\DathBomb\Images\くろりん.png" />
+    <Content Include="UserData\DathBomb\Images\ここない.jpg" />
+    <Content Include="UserData\DathBomb\Images\なじょ.png" />
+    <Content Include="UserData\DathBomb\Images\なるるるるな.png" />
+    <Content Include="UserData\DathBomb\Images\ぬるぽん.png" />
+    <Content Include="UserData\DathBomb\Images\ねこようへい.png" />
+    <Content Include="UserData\DathBomb\Images\ぺい.png" />
+    <Content Include="UserData\DathBomb\Images\まるおまる.png" />
+    <Content Include="UserData\DathBomb\Images\やきばた～.png" />
+    <Content Include="UserData\DathBomb\Images\るしあグループ.png" />
+    <Content Include="UserData\DathBomb\Images\ダイン.png" />
+    <Content Include="UserData\DathBomb\Images\ユーリ.png" />
+    <Content Include="UserData\DathBomb\Images\刀グループ.png" />
+    <Content Include="UserData\DathBomb\Images\南無なむ.png" />
+    <Content Include="UserData\DathBomb\Images\味夏いちご.png" />
+    <Content Include="UserData\DathBomb\Images\淳%40心折設定.png" />
+    <Content Include="UserData\DathBomb\Images\神無月瑪瑙.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
