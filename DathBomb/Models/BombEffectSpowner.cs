@@ -50,7 +50,6 @@ namespace DathBomb.Models
             if (dummyBomb.BombInfo == null) {
                 return;
             }
-            //this._dummyBombExprosionEffect.SpawnExplosion(noteCutInfo.cutPoint);
             var effect = this._flyingBombNameEffectPool.Alloc();
             effect.transform.localPosition = noteCutInfo.cutPoint;
             effect.didFinishEvent.Add(this);
@@ -81,14 +80,23 @@ namespace DathBomb.Models
             effect.transform.localPosition = Vector3.zero;
             effect.didFinishEvent.Add(this);
             var targetpos = noteController.worldRotation * (new Vector3(0, 1.7f, 10f));
-            effect.InitAndPresent(dummyBomb.BombInfo.Text, dummyBomb.BombInfo.ViewTime, dummyBomb.BombInfo.TargetPos.ConvertToVector3(), noteController.worldRotation, Color.white, dummyBomb.BombInfo.FontSize, false);
+            try {
+                if (ImageLoader.instance.Images.TryGetValue(dummyBomb.BombInfo.ImageName, out var texture)) {
+                    effect.InitAndPresent(dummyBomb.BombInfo.Text, texture, dummyBomb.BombInfo.ViewTime, dummyBomb.BombInfo.TargetPos.ConvertToVector3(), noteController.worldRotation, Color.white, dummyBomb.BombInfo.FontSize, dummyBomb.BombInfo.ImageScale, false);
+                }
+                else {
+                    effect.InitAndPresent(dummyBomb.BombInfo.Text, dummyBomb.BombInfo.ViewTime, dummyBomb.BombInfo.TargetPos.ConvertToVector3(), noteController.worldRotation, Color.white, dummyBomb.BombInfo.FontSize, false);
+                }
+            }
+            catch (Exception e) {
+                Logger.Error(e);
+            }
             dummyBomb.BombInfo = null;
         }
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // メンバ変数
         private BeatmapObjectManager _beatmapObjectManager;
-        //private DummyBombExprosionEffect _dummyBombExprosionEffect;
         private ObjectMemoryPool<FlyingBombNameEffect> _flyingBombNameEffectPool;
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
