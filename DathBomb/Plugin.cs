@@ -1,21 +1,28 @@
-﻿using IPA;
+﻿using DathBomb.Installers;
+using DathBomb.Utilities;
+using HarmonyLib;
+using IPA;
 using IPA.Config;
 using IPA.Config.Stores;
+using SiraUtil.Zenject;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using IPALogger = IPA.Logging.Logger;
 
 namespace DathBomb
 {
-    [Plugin(RuntimeOptions.SingleStartInit)]
+    [Plugin(RuntimeOptions.DynamicInit)]
     public class Plugin
     {
         internal static Plugin Instance { get; private set; }
         internal static IPALogger Log { get; private set; }
+        internal const string HARMONY_ID = "DathBomb.denpadokei.com.github";
+        private Harmony harmony;
 
         [Init]
         /// <summary>
@@ -23,11 +30,14 @@ namespace DathBomb
         /// [Init] methods that use a Constructor or called before regular methods like InitWithConfig.
         /// Only use [Init] with one Constructor.
         /// </summary>
-        public void Init(IPALogger logger)
+        public void Init(IPALogger logger, Zenjector zenjector)
         {
             Instance = this;
             Log = logger;
             Log.Info("DathBomb initialized.");
+            zenjector.OnGame<DathBombGameInstaller>();
+            zenjector.OnMenu<DathBombMenuInstaller>();
+            harmony = new Harmony(HARMONY_ID);
         }
 
         #region BSIPA Config
@@ -46,8 +56,7 @@ namespace DathBomb
         public void OnApplicationStart()
         {
             Log.Debug("OnApplicationStart");
-            new GameObject("DathBombController").AddComponent<DathBombController>();
-
+            ImageLoader.TouchInstance();
         }
 
         [OnExit]
@@ -55,6 +64,18 @@ namespace DathBomb
         {
             Log.Debug("OnApplicationQuit");
 
+        }
+
+        [OnEnable]
+        public void OnEnable()
+        {
+            this.harmony.PatchAll(Assembly.GetExecutingAssembly());
+        }
+
+        [OnDisable]
+        public void OnDisable()
+        {
+            this.harmony.UnpatchAll(HARMONY_ID);
         }
     }
 }

@@ -14,11 +14,12 @@ namespace DathBomb.Utilities
     {
         private static readonly string _dirPath = Path.Combine(Environment.CurrentDirectory, "UserData", "DathBomb");
         private static readonly string _imageDirPath = Path.Combine(_dirPath, "Images");
-        public ConcurrentDictionary<string, Texture2D> Images { get; } = new ConcurrentDictionary<string, Texture2D>();
+        public ConcurrentDictionary<string, Sprite> Images { get; } = new ConcurrentDictionary<string, Sprite>();
 
         private Texture2D CreateTextuer2D(byte[] datas, ImageExtention extention)
         {
             this.GetImageSize(datas, extention, out var width, out var height);
+            Logger.Debug($"width : {width}, height : {height}");
             var result = new Texture2D(width, height, TextureFormat.ARGB32, false, true);
             result.LoadImage(datas);
             return result;
@@ -67,7 +68,8 @@ namespace DathBomb.Utilities
                 var extention = Path.GetExtension(imagePath);
                 var extentionType = ImageExtention.PNG;
                 var textuer = this.CreateTextuer2D(datas, extentionType);
-                this.Images.TryAdd(Path.GetFileName(imagePath), textuer);
+                var createdSprite = Sprite.Create(textuer, new Rect(0, 0, textuer.width, textuer.height), Vector2.one * 0.5f);
+                this.Images.TryAdd(Path.GetFileName(imagePath), createdSprite);
             }
         }
 

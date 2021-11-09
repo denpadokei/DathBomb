@@ -6,7 +6,7 @@ using Zenject;
 
 namespace DathBomb.Installers
 {
-    public class SPCGameInstaller : MonoInstaller
+    public class DathBombGameInstaller : MonoInstaller
     {
         public override void InstallBindings()
         {
@@ -15,7 +15,6 @@ namespace DathBomb.Installers
                 BombNoteControllerPatch.BombMesh = null;
             }
             this.Container.BindInterfacesAndSelfTo<DathBombController>().FromNewComponentOnNewGameObject(nameof(DathBombController)).AsSingle().NonLazy();
-            this.Container.BindInterfacesAndSelfTo<DummyBombExprosionEffect>().FromNewComponentOnNewGameObject(nameof(DummyBombExprosionEffect)).AsSingle().NonLazy();
             this.Container.BindInterfacesAndSelfTo<BombEffectSpowner>().FromNewComponentOnNewGameObject(nameof(BombEffectSpowner)).AsSingle().NonLazy();
             this.Container.BindInterfacesAndSelfTo<BeatmapUtil>().AsSingle().NonLazy();
             this.Container.BindInterfacesAndSelfTo<CustomNoteUtil>().AsSingle().NonLazy();

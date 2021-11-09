@@ -1,6 +1,8 @@
 ﻿using DathBomb.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
@@ -44,6 +46,44 @@ namespace DathBomb
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // プライベートメソッド
+        private void CreateDefault()
+        {
+            var entites = new List<BombTextEntity>();
+            var imageQueue = new ConcurrentQueue<string>();
+            foreach (var imagePath in Directory.EnumerateFiles(_imageDirPath, "*.png", SearchOption.TopDirectoryOnly)) {
+                imageQueue.Enqueue(imagePath);
+            }
+            for (int i = 0; i < 60; i++) {
+                imageQueue.TryDequeue(out var imageName);
+                for (int j = 0; j < 3; j++) {
+                    if (j != 2 && !string.IsNullOrEmpty(imageName)) {
+                        var entity = new BombTextEntity()
+                        {
+                            Index = j,
+                            GroupingID = i,
+                            Text = j == 0 ? "" : Path.GetFileNameWithoutExtension(imageName),
+                            ImageName = j == 0 ? Path.GetFileName(imageName) : "",
+                            TargetPos = new Vector3Wrapper(new Vector3(0f, 1.8f - (0.5f * j), 4f))
+                        };
+                        entites.Add(entity);
+                    }
+                    else {
+                        var entity = new BombTextEntity()
+                        {
+                            Index = j,
+                            GroupingID = i,
+                            Text = "この辺になんか説明とか",
+                            ImageName = "",
+                            TargetPos = new Vector3Wrapper(new Vector3(0f, 1.8f - (0.5f * j), 4f))
+                        };
+                        entites.Add(entity);
+                    }
+                }
+            }
+            var jsonEntity = new BombJsonEntity(entites);
+            var defaultJson = JsonConvert.SerializeObject(jsonEntity, Formatting.Indented);
+            File.WriteAllText(_jsonPath, defaultJson);
+        }
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // メンバ変数
@@ -52,6 +92,9 @@ namespace DathBomb
         private static readonly string _imageDirPath = Path.Combine(_dirPath, "Images");
         private static readonly string _jsonPath = Path.Combine(_dirPath, "Staff.json");
         private int noteCount;
+        private float nextInterval;
+        private DateTime _lastSendTime;
+        private ConcurrentQueue<IGrouping<int, BombTextEntity>> _entities = new ConcurrentQueue<IGrouping<int, BombTextEntity>>();
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // 構築・破棄
@@ -68,7 +111,44 @@ namespace DathBomb
             // For this particular MonoBehaviour, we only want one instance to exist at any time, so store a reference to it in a static property
             //   and destroy any that are created while one already exists.
             Plugin.Log?.Debug($"{name}: Awake()");
+            _lastSendTime = DateTime.Now;
+            nextInterval = 0f;
+            while (_entities.TryDequeue(out _)) {
+
+            }
+            if (!Directory.Exists(_dirPath)) {
+                Directory.CreateDirectory(_dirPath);
+            }
+            if (!File.Exists(_jsonPath)) {
+                this.CreateDefault();
+            }
+
+            var jsonText = File.ReadAllText(_jsonPath);
+            var bombJson = JsonConvert.DeserializeObject<BombJsonEntity>(jsonText);
+
+            foreach (var eneity in bombJson.Staff.GroupBy(x => x.GroupingID).OrderBy(x => x.Key)) {
+                _entities.Enqueue(eneity);
+            }
         }
+
+        private void Update()
+        {
+            if (source.songTime == 0) {
+                _lastSendTime = DateTime.Now;
+                return;
+            }
+            if ((DateTime.Now - _lastSendTime).Seconds < nextInterval) {
+                return;
+            }
+            if (_entities.TryDequeue(out var entity)) {
+                foreach (var item in entity.OrderBy(x => x.Index)) {
+                    DummyBomb.Senders.Enqueue(item);
+                    nextInterval = item.Interval;
+                    _lastSendTime = DateTime.Now;
+                }
+            }
+        }
+
         /// <summary>
         /// Called when the script is being destroyed.
         /// </summary>

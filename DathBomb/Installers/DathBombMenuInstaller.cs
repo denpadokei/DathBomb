@@ -4,7 +4,7 @@ using Zenject;
 
 namespace DathBomb.Installers
 {
-    public class SPCMenuInstaller : MonoInstaller
+    public class DathBombMenuInstaller : MonoInstaller
     {
         public override void InstallBindings() => this.Container.BindInterfacesAndSelfTo<SettingViewController>().FromNewComponentAsViewController().AsSingle().NonLazy();
     }

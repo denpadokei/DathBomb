@@ -154,20 +154,19 @@
   <ItemGroup>
     <Compile Include="HarmonyPathches\BombNoteControllerPatch.cs" />
     <Compile Include="HarmonyPathches\GameNoteControllerPatch.cs" />
-    <Compile Include="Installers\SPCGameInstaller.cs" />
-    <Compile Include="Installers\SPCMenuInstaller.cs" />
-    <Compile Include="Interfaces\ICommandable.cs" />
+    <Compile Include="Installers\DathBombGameInstaller.cs" />
+    <Compile Include="Installers\DathBombMenuInstaller.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Models\BeatmapUtil.cs" />
     <Compile Include="Models\BombEffectSpowner.cs" />
     <Compile Include="Models\BombJsonEntity.cs" />
     <Compile Include="Models\BombTextEntity.cs" />
     <Compile Include="Models\DummyBomb.cs" />
-    <Compile Include="Models\DummyBombExprosionEffect.cs" />
     <Compile Include="Models\FlyingBombNameEffect.cs" />
     <Compile Include="Models\FontAssetReader.cs" />
     <Compile Include="Models\ObjectMemoryPool.cs" />
     <Compile Include="Models\ParticleAssetLoader.cs" />
+    <Compile Include="Models\Vector3Wrapper.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Configuration\PluginConfig.cs" />
     <Compile Include="DathBombController.cs" />
