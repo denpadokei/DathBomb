@@ -1,4 +1,5 @@
 ﻿using DathBomb.Installers;
+using DathBomb.Models;
 using DathBomb.Utilities;
 using HarmonyLib;
 using IPA;
@@ -46,6 +47,7 @@ namespace DathBomb
         public void OnApplicationStart()
         {
             Log.Debug("OnApplicationStart");
+            FontAssetReader.TouchInstance();
             ImageLoader.TouchInstance();
         }
 

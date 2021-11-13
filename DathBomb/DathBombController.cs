@@ -116,6 +116,9 @@ namespace DathBomb
             while (_entities.TryDequeue(out _)) {
 
             }
+            while (DummyBomb.Senders.TryDequeue(out _)) {
+
+            }
             if (!Directory.Exists(_dirPath)) {
                 Directory.CreateDirectory(_dirPath);
             }

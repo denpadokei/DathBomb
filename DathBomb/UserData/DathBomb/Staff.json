@@ -3,2701 +3,1336 @@
     {
       "Index": 0,
       "GroupingID": 0,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "BK／Ater=クロ.png",
+      "Text": "1日目",
+      "FontSize": 8.0,
+      "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": 0,
+        "y": 3.0,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 0,
-      "Text": "BK／Ater=クロ",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 0,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 1,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "Charlotte＠あうりん.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 1,
-      "Text": "Charlotte＠あうりん",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 1,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 2,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "haseri.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 2,
-      "Text": "haseri",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 2,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 3,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "Kirika.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 3,
-      "Text": "Kirika",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 3,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 4,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "Kylon.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 4,
-      "Text": "Kylon",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 4,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 5,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "Mozory.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 5,
-      "Text": "Mozory",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 5,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 6,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "narukuni.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 6,
-      "Text": "narukuni",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 6,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 7,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "nokingood.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 7,
-      "Text": "nokingood",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 7,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 8,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "shana.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 8,
-      "Text": "shana",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 8,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 9,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "T2.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 9,
-      "Text": "T2",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 9,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 10,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "いずみなグループ.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 10,
-      "Text": "いずみなグループ",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 10,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 11,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "えびフライ.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 11,
-      "Text": "えびフライ",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 11,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 12,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "かつや.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 12,
-      "Text": "かつや",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 12,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 13,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "がらい.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 13,
-      "Text": "がらい",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 13,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 14,
       "Text": "",
       "FontSize": 5.0,
       "ImageName": "きずなぎ.png",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 0,
       "TargetPos": {
-        "x": 0.0,
+        "x": -3.0,
         "y": 1.8,
-        "z": 4.0
+        "z": 5.0
       }
     },
     {
-      "Index": 1,
-      "GroupingID": 14,
+      "Index": 2,
+      "GroupingID": 0,
       "Text": "きずなぎ",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 0,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "まるおまる.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 0,
+      "Text": "まるおまる",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
+        "x": 3.0,
         "y": 1.3,
-        "z": 4.0
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 1,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "Mozory.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 1,
+      "Text": "Mozory",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 1,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "淳@心折設定.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 1,
+      "Text": "淳@心折設定",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 2,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "えびフライ.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 2,
+      "Text": "えびフライ",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 2,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "T2.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 2,
+      "Text": "T2",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 3,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "なじょ.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 3,
+      "Text": "なじょ",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 3,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "haseri.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 3,
+      "Text": "haseri",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.5,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 4,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "BK／Ater=クロ.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 4,
+      "Text": "BK／Ater=クロ",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 4,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "いずみなグループ.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 4,
+      "Text": "いずみみなと\nくまのお菓子",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 0.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 0,
+      "GroupingID": 5,
+      "Text": "2日目",
+      "FontSize": 8.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
+      "TargetPos": {
+        "x": 0,
+        "y": 3.0,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 5,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "ぬるぽん.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.7,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 5,
+      "Text": "ぬるぽん",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 5,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "ユーリ.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 5,
+      "Text": "ユーリ",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.5,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 6,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "ぺい.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 6,
+      "Text": "ぺい",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 6,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "かつや.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 6,
+      "Text": "かつや",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 7,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "がらい.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 7,
+      "Text": "がらい",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 7,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "Charlotte＠あうりん.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 7,
+      "Text": "Charlotte＠あうりん",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.2,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 8,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "やきばた～.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 8,
+      "Text": "やきばた～",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 8,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "南無なむ.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 8,
+      "Text": "南無なむ",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 9,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "ねこようへい.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 9,
+      "Text": "ねこようへい",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 9,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "shana.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 9,
+      "Text": "shana",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 0,
+      "GroupingID": 10,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "刀グループ.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 10,
+      "Text": "刀\n莉澄ハル\nモフミ",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 0.4,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 0,
+      "GroupingID": 11,
+      "Text": "3日目",
+      "FontSize": 8.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
+      "TargetPos": {
+        "x": 0,
+        "y": 3.0,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 11,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "Kylon.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 11,
+      "Text": "Kylon",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 11,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "narukuni.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 11,
+      "Text": "成邦",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 12,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "神無月瑪瑙.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 12,
+      "Text": "神無月瑪瑙",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 12,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "くろりん.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 12,
+      "Text": "くろりん",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 13,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "ここない.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 13,
+      "Text": "ここない",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 13,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "Kirika.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 13,
+      "Text": "Kirika",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 14,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "なるるるるな.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
       }
     },
     {
       "Index": 2,
       "GroupingID": 14,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 15,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "くろりん.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 15,
-      "Text": "くろりん",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 15,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 16,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "なじょ.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 16,
-      "Text": "なじょ",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 16,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 17,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "なるるるるな.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 17,
       "Text": "なるるるるな",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 14,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "ダイン.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 14,
+      "Text": "ダイン",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
+        "x": 3.0,
         "y": 1.3,
-        "z": 4.0
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 15,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "味夏いちご.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 2,
+      "GroupingID": 15,
+      "Text": "味夏いちご",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 3,
+      "GroupingID": 15,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "nokingood.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 4,
+      "GroupingID": 15,
+      "Text": "nokingood",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": 3.0,
+        "y": 1.3,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 0,
+      "GroupingID": 16,
+      "Text": "",
+      "FontSize": 5.0,
+      "ImageName": "るしあグループ.png",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": 1.8,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 16,
+      "Text": "Rik\nemja\n秋乃るしあ\nrage_tht",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 5.0,
+      "TargetPos": {
+        "x": -3.0,
+        "y": -0.1,
+        "z": 5.0
+      }
+    },
+    {
+      "Index": 1,
+      "GroupingID": 17,
+      "Text": "<size=120%>企画</size>\n\nemja",
+      "FontSize": 5.0,
+      "ImageName": "",
+      "ImageScale": 0.005,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
+      "TargetPos": {
+        "x": -1.8,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 2,
       "GroupingID": 17,
-      "Text": "この辺になんか説明とか",
+      "Text": "<size=120%>MC</size>\n\nemja\nきずなぎ\nrunrunmood\n秋乃るしあ",
       "FontSize": 5.0,
-      "ImageName": "",
+      "ImageName":"",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 18,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "ぬるぽん.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": 1.8,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 18,
-      "Text": "ぬるぽん",
+      "Text": "<size=120%>アドバイザー</size>\n\nいずみなと\nにぼし(干物)",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
+        "x": -2.5,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 2,
       "GroupingID": 18,
-      "Text": "この辺になんか説明とか",
+      "Text": "<size=120%>イベントロゴ作成</size>\n\nKirika sprite",
       "FontSize": 5.0,
-      "ImageName": "",
+      "ImageName":"",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 19,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "ねこようへい.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": 2.5,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 19,
-      "Text": "ねこようへい",
+      "Text": "<size=120%>背景素材作成</size>\n\nrindoblue",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
+        "x": -2.2,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 2,
       "GroupingID": 19,
-      "Text": "この辺になんか説明とか",
+      "Text": "<size=120%>参加者進行管理</size>\n\nねこようへい",
       "FontSize": 5.0,
-      "ImageName": "",
+      "ImageName":"",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 20,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "ぺい.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": 2.2,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 20,
-      "Text": "ぺい",
+      "Text": "<size=120%>スタッフ進行管理</size>\n\nMozory",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
+        "x": -3.0,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 2,
       "GroupingID": 20,
-      "Text": "この辺になんか説明とか",
+      "Text": "<size=120%>会議議事録作成</size>\n\nmiiro",
       "FontSize": 5.0,
-      "ImageName": "",
+      "ImageName":"",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 21,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "まるおまる.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": 3.0,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 21,
-      "Text": "まるおまる",
+      "Text": "<size=120%>ホームページ作成</size>\n\nぬるぽん\nやまと",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
+        "x": -3.0,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 2,
       "GroupingID": 21,
-      "Text": "この辺になんか説明とか",
+      "Text": "<size=120%>ホームページ画像作成</size>\n\nrindoblue",
       "FontSize": 5.0,
-      "ImageName": "",
+      "ImageName":"",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 22,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "やきばた～.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": 3.0,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 22,
-      "Text": "やきばた～",
+      "Text": "<size=120%>動画編集相談役</size>\n\nYABUTUBAKI",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
+        "x": -2.8,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 2,
       "GroupingID": 22,
-      "Text": "この辺になんか説明とか",
+      "Text": "<size=120%>本編動画編集1日目</size>\n\nUN119",
       "FontSize": 5.0,
-      "ImageName": "",
+      "ImageName":"",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 23,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "るしあグループ.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": 2.8,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 23,
-      "Text": "るしあグループ",
+      "Text": "<size=120%>本編動画編集2日目</size>\n\nやきばた～",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
+        "x": -2.8,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 2,
       "GroupingID": 23,
-      "Text": "この辺になんか説明とか",
+      "Text": "<size=120%>本編動画編集3日目</size>\n\nくろりん",
       "FontSize": 5.0,
-      "ImageName": "",
+      "ImageName":"",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 24,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "ダイン.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": 2.8,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 24,
-      "Text": "ダイン",
+      "Text": "<size=120%>OP・予告動画作成</size>\n\nぶなぺんぎん",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
+        "x": -2.2,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 2,
       "GroupingID": 24,
-      "Text": "この辺になんか説明とか",
+      "Text": "<size=120%>広告動画作成</size>\n\nBK/Ater=クロ",
       "FontSize": 5.0,
-      "ImageName": "",
+      "ImageName":"",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 25,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "ユーリ.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": 2.2,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 25,
-      "Text": "ユーリ",
+      "Text": "<size=120%>動画チェック</size>\n\nタイラントP\nrindoblue\nKirika sprite",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
+        "x": -2.0,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 2,
       "GroupingID": 25,
-      "Text": "この辺になんか説明とか",
+      "Text": "<size=120%>コメント対応</size>\n\nタイラントP\nやまと",
       "FontSize": 5.0,
-      "ImageName": "",
+      "ImageName":"",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 26,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "刀グループ.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": 2.0,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 26,
-      "Text": "刀グループ",
+      "Text": "<size=120%>通訳</size>\n\nKirika sprite",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 0.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
+        "x": -2.5,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 2,
       "GroupingID": 26,
-      "Text": "この辺になんか説明とか",
+      "Text": "<size=120%>スタッフロール作成</size>\n\nrunrunmood",
       "FontSize": 5.0,
-      "ImageName": "",
+      "ImageName":"",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
+      "ViewTime": 5.0,
       "Interval": 5.0,
       "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 27,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "南無なむ.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": 2.5,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 27,
-      "Text": "南無なむ",
+      "Text": "<size=120%>スタッフロール使用曲</size>\n\nEscape(OST VOL.1)",
       "FontSize": 5.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 17.2,
       "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 27,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 28,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "味夏いちご.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
+        "x": -1.8,
+        "y": 1.5,
+        "z": 5.0
       }
     },
     {
       "Index": 1,
       "GroupingID": 28,
-      "Text": "味夏いちご",
-      "FontSize": 5.0,
+      "Text": "Thank you watching!",
+      "FontSize": 10.0,
       "ImageName": "",
       "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
+      "ViewTime": 5.0,
+      "Interval": 20.0,
       "TargetPos": {
         "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 28,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 29,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "淳@心折設定.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 29,
-      "Text": "淳@心折設定",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 29,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 30,
-      "Text": "",
-      "FontSize": 5.0,
-      "ImageName": "神無月瑪瑙.png",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 30,
-      "Text": "神無月瑪瑙",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 30,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 31,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 31,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 31,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 32,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 32,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 32,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 33,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 33,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 33,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 34,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 34,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 34,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 35,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 35,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 35,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 36,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 36,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 36,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 37,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 37,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 37,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 38,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 38,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 38,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 39,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 39,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 39,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 40,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 40,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 40,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 41,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 41,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 41,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 42,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 42,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 42,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 43,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 43,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 43,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 44,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 44,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 44,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 45,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 45,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 45,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 46,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 46,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 46,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 47,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 47,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 47,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 48,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 48,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 48,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 49,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 49,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 49,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 50,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 50,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 50,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 51,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 51,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 51,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 52,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 52,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 52,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 53,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 53,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 53,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 54,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 54,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 54,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 55,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 55,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 55,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 56,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 56,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 56,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 57,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 57,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 57,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 58,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 58,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 58,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 0,
-      "GroupingID": 59,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.8,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 1,
-      "GroupingID": 59,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 1.3,
-        "z": 4.0
-      }
-    },
-    {
-      "Index": 2,
-      "GroupingID": 59,
-      "Text": "この辺になんか説明とか",
-      "FontSize": 5.0,
-      "ImageName": "",
-      "ImageScale": 0.005,
-      "ViewTime": 7.0,
-      "Interval": 5.0,
-      "TargetPos": {
-        "x": 0.0,
-        "y": 0.799999952,
-        "z": 4.0
+        "y": 1.5,
+        "z": 5.0
       }
     }
   ]

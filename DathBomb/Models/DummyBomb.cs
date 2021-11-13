@@ -12,7 +12,7 @@ namespace DathBomb.Models
         #region // プロパティ
         public GameNoteController Controller { get; private set; }
         public BombTextEntity BombInfo { get; set; }
-        public static ConcurrentQueue<BombTextEntity> Senders = new ConcurrentQueue<BombTextEntity>();
+        public static ConcurrentQueue<BombTextEntity> Senders { get; } = new ConcurrentQueue<BombTextEntity>();
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // イベント
