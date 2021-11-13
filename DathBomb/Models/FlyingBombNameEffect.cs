@@ -19,7 +19,11 @@ namespace DathBomb.Models
                     this._noGlow = Instantiate(Resources.FindObjectsOfTypeAll<Material>().FirstOrDefault(x => x.name == "UINoGlow"));
                 }
 
-                this._rootCanvas = this.gameObject.AddComponent<Canvas>();
+                this.gameObject.AddComponent<RectTransform>();
+                this.gameObject.AddComponent<Canvas>();
+                this.gameObject.AddComponent<CanvasRenderer>();
+                this.gameObject.AddComponent<CurvedCanvasSettings>();
+                this._rootCanvas = this.gameObject.GetComponent<Canvas>();
                 this._rootCanvas.transform.localPosition = Vector3.zero;
                 this._rootCanvas.transform.localRotation = Quaternion.identity;
                 this._rootCanvas.renderMode = RenderMode.WorldSpace;
