@@ -38,8 +38,8 @@ namespace DathBomb
             Log.Info("DathBomb initialized.");
             Configuration.PluginConfig.Instance = conf.Generated<Configuration.PluginConfig>();
             Log.Debug("Config loaded");
-            zenjector.OnGame<DathBombGameInstaller>();
-            zenjector.OnMenu<DathBombMenuInstaller>();
+            zenjector.Install<DathBombGameInstaller>(Location.Player);
+            zenjector.Install<DathBombMenuInstaller>(Location.Menu);
             harmony = new Harmony(HARMONY_ID);
         }
 
@@ -55,7 +55,6 @@ namespace DathBomb
         public void OnApplicationQuit()
         {
             Log.Debug("OnApplicationQuit");
-
         }
 
         [OnEnable]
@@ -67,7 +66,7 @@ namespace DathBomb
         [OnDisable]
         public void OnDisable()
         {
-            this.harmony.UnpatchAll(HARMONY_ID);
+            this.harmony.UnpatchSelf();
         }
     }
 }

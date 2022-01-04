@@ -56,8 +56,8 @@ namespace DathBomb.Models
             if (CustomNoteUtil.IsInstallCustomNote && 1 <= CustomNoteUtil.SelectedNoteIndex) {
                 if (Senders.TryDequeue(out var sender)) {
                     this.BombInfo = sender;
-                    if (this._bombMesh == null && BombNoteControllerPatch.BombMesh != null) {
-                        this._bombMesh = Instantiate(BombNoteControllerPatch.BombMesh);
+                    if (this._bombMesh == null && BombMeshGetter.BombMesh != null) {
+                        this._bombMesh = Instantiate(BombMeshGetter.BombMesh);
                         this._bombMesh.gameObject.transform.SetParent(this._noteCube, false);
                     }
                     if (this._bombMesh != null) {
@@ -74,8 +74,8 @@ namespace DathBomb.Models
                 }
             }
             else {
-                if (this._bombMesh == null && BombNoteControllerPatch.BombMesh != null) {
-                    this._bombMesh = Instantiate(BombNoteControllerPatch.BombMesh);
+                if (this._bombMesh == null && BombMeshGetter.BombMesh != null) {
+                    this._bombMesh = Instantiate(BombMeshGetter.BombMesh);
                     this._bombMesh.gameObject.transform.SetParent(this._noteCube, false);
                 }
                 if (Senders.TryDequeue(out var sender)) {

@@ -152,7 +152,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HarmonyPathches\BombNoteControllerPatch.cs" />
     <Compile Include="HarmonyPathches\GameNoteControllerPatch.cs" />
     <Compile Include="Installers\DathBombGameInstaller.cs" />
     <Compile Include="Installers\DathBombMenuInstaller.cs" />
@@ -160,6 +159,7 @@
     <Compile Include="Models\BeatmapUtil.cs" />
     <Compile Include="Models\BombEffectSpowner.cs" />
     <Compile Include="Models\BombJsonEntity.cs" />
+    <Compile Include="Models\BombMeshGetter.cs" />
     <Compile Include="Models\BombTextEntity.cs" />
     <Compile Include="Models\DummyBomb.cs" />
     <Compile Include="Models\FlyingBombNameEffect.cs" />

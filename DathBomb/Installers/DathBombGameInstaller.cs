@@ -10,12 +10,9 @@ namespace DathBomb.Installers
     {
         public override void InstallBindings()
         {
-            if (BombNoteControllerPatch.BombMesh != null) {
-                Destroy(BombNoteControllerPatch.BombMesh);
-                BombNoteControllerPatch.BombMesh = null;
-            }
-            this.Container.BindInterfacesAndSelfTo<DathBombController>().FromNewComponentOnNewGameObject(nameof(DathBombController)).AsSingle().NonLazy();
-            this.Container.BindInterfacesAndSelfTo<BombEffectSpowner>().FromNewComponentOnNewGameObject(nameof(BombEffectSpowner)).AsSingle().NonLazy();
+            this.Container.BindInterfacesAndSelfTo<DathBombController>().FromNewComponentOnNewGameObject().AsSingle().NonLazy();
+            this.Container.BindInterfacesAndSelfTo<BombEffectSpowner>().FromNewComponentOnNewGameObject().AsSingle().NonLazy();
+            this.Container.BindInterfacesAndSelfTo<BombMeshGetter>().AsSingle().NonLazy();
             this.Container.BindInterfacesAndSelfTo<BeatmapUtil>().AsSingle().NonLazy();
             this.Container.BindInterfacesAndSelfTo<CustomNoteUtil>().AsSingle().NonLazy();
         }
