@@ -38,6 +38,7 @@ namespace DathBomb
             Log.Info("DathBomb initialized.");
             Configuration.PluginConfig.Instance = conf.Generated<Configuration.PluginConfig>();
             Log.Debug("Config loaded");
+            zenjector.Install<DathBombAppInstaller>(Location.App);
             zenjector.Install<DathBombGameInstaller>(Location.Player);
             zenjector.Install<DathBombMenuInstaller>(Location.Menu);
             harmony = new Harmony(HARMONY_ID);

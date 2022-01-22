@@ -33,6 +33,8 @@ namespace DathBomb.Models
                 this._colorManager = visuals.GetField<ColorManager, ColorNoteVisuals>("_colorManager");
             }
             this._noteMesh = this.GetComponentInChildren<MeshRenderer>();
+            this._selectedNoteIndex = CustomNoteUtil.SelectedNoteIndex;
+            this._isCustomNote = CustomNoteUtil.IsInstallCustomNote && 1 <= this._selectedNoteIndex;
         }
         protected void OnDestroy()
         {
@@ -51,65 +53,37 @@ namespace DathBomb.Models
             if (this.Controller.gameNoteType == GameNoteController.GameNoteType.Ghost) {
                 return;
             }
-            // ここで置き換えるノーツの設定をする（ボムにするとかなんとか）
-            // ふぁっきんかすたむのーつ
-            if (CustomNoteUtil.IsInstallCustomNote && 1 <= CustomNoteUtil.SelectedNoteIndex) {
-                if (Senders.TryDequeue(out var sender)) {
-                    this.BombInfo = sender;
-                    if (this._bombMesh == null && BombMeshGetter.BombMesh != null) {
-                        this._bombMesh = Instantiate(BombMeshGetter.BombMesh);
-                        this._bombMesh.gameObject.transform.SetParent(this._noteCube, false);
-                    }
-                    if (this._bombMesh != null) {
-                        this._bombMesh.enabled = true;
-                        var color = this._colorManager.ColorForType(noteController.noteData.colorType);
-                        this._bombMesh.material.SetColor("_SimpleColor", color);
-                    }
-                }
-                else {
-                    this.BombInfo = null;
-                    if (this._bombMesh != null) {
-                        this._bombMesh.enabled = false;
-                    }
-                }
+            if (this._bombMesh == null && BombMeshGetter.BombMesh != null) {
+                this._bombMesh = Instantiate(BombMeshGetter.BombMesh);
+                this._bombMesh.gameObject.transform.SetParent(this._noteCube, false);
             }
-            else {
-                if (this._bombMesh == null && BombMeshGetter.BombMesh != null) {
-                    this._bombMesh = Instantiate(BombMeshGetter.BombMesh);
-                    this._bombMesh.gameObject.transform.SetParent(this._noteCube, false);
-                }
-                if (Senders.TryDequeue(out var sender)) {
-                    this.BombInfo = sender;
-                    this._noteMesh.forceRenderingOff = true;
-                    if (this._bombMesh != null) {
-                        this._bombMesh.enabled = true;
-                    }
-                }
-                else {
-                    this._noteMesh.forceRenderingOff = false;
-                    if (this._bombMesh != null) {
-                        this._bombMesh.enabled = false;
-                    }
-                }
-                var color = this._colorManager.ColorForType(noteController.noteData.colorType);
-                if (this._bombMesh != null) {
-                    this._bombMesh.material.SetColor("_SimpleColor", color);
-                }
-            }
+            var color = this._colorManager.ColorForType(noteController.noteData.colorType);
+            this.SetActiveBomb(Senders.TryDequeue(out var sender), in color, this._isCustomNote);
+            this.BombInfo = sender;
         }
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // プライベートメソッド
+        private void SetActiveBomb(bool active, in Color noteColor, bool isInstallCustomNote = false)
+        {
+            if (!isInstallCustomNote && this._noteMesh != null) {
+                this._noteMesh.forceRenderingOff = active;
+            }
+            if (this._bombMesh != null) {
+                this._bombMesh.enabled = active;
+                this._bombMesh.material.SetColor(s_bombColorId, noteColor);
+            }
+        }
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // メンバ変数
         private Transform _noteCube;
-        [DoesNotRequireDomainReloadInit]
-        protected static readonly int _noteColorId = Shader.PropertyToID("_Color");
-        protected static readonly int _bombColorId = Shader.PropertyToID("_SimpleColor");
+        protected static readonly int s_bombColorId = Shader.PropertyToID("_SimpleColor");
         private MeshRenderer _bombMesh;
         private MeshRenderer _noteMesh;
         private ColorManager _colorManager;
+        private int _selectedNoteIndex;
+        private bool _isCustomNote;
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // 構築・破棄

@@ -32,7 +32,7 @@ namespace DathBomb.Utilities
         {
             colorNoteVisuals = gameObject.GetComponentInChildren<ColorNoteVisuals>();
             if (colorNoteVisuals == null) {
-                var customColorType = Type.GetType("CustomNotes.Overrides.ColorNoteVisuals, CustomNotes");
+                var customColorType = Type.GetType("CustomNotes.Overrides.CustomNoteColorNoteVisuals, CustomNotes");
                 colorNoteVisuals = (ColorNoteVisuals)gameObject.GetComponentInChildren(customColorType);
             }
             return colorNoteVisuals != null;
