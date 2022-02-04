@@ -95,6 +95,7 @@ namespace DathBomb
         private int noteCount;
         private float nextInterval;
         private DateTime _lastSendTime;
+        private bool _enable;
         private ConcurrentQueue<IGrouping<int, BombTextEntity>> _entities = new ConcurrentQueue<IGrouping<int, BombTextEntity>>();
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
@@ -120,7 +121,8 @@ namespace DathBomb
             while (DummyBomb.Senders.TryDequeue(out _)) {
 
             }
-            if (!PluginConfig.Instance.IsBombEnable) {
+            this._enable = PluginConfig.Instance.IsBombEnable;
+            if (!this._enable) {
                 return;
             }
             if (!Directory.Exists(_dirPath)) {
@@ -140,6 +142,9 @@ namespace DathBomb
 
         private void Update()
         {
+            if (!this._enable) {
+                return;
+            }
             if (source.songTime == 0) {
                 _lastSendTime = DateTime.Now;
                 return;
