@@ -1,4 +1,5 @@
 ﻿using BeatSaberMarkupLanguage.Attributes;
+using BeatSaberMarkupLanguage.GameplaySetup;
 using BeatSaberMarkupLanguage.Settings;
 using BeatSaberMarkupLanguage.ViewControllers;
 using DathBomb.Configuration;
@@ -11,9 +12,9 @@ namespace DathBomb.Views
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // プロパティ
         // For this method of setting the ResourceName, this class must be the first class in the file.
-        public string ResourceName => string.Join(".", this.GetType().Namespace, this.GetType().Name);
+        public string ResourceName => string.Join(".", this.GetType().Namespace, this.GetType().Name, "bsml");
         [UIValue("is-bomb-enable")]
-        public virtual bool IsBombEnable
+        public bool IsBombEnable
         {
             get => PluginConfig.Instance.IsBombEnable;
             set => PluginConfig.Instance.IsBombEnable = value;
@@ -30,7 +31,11 @@ namespace DathBomb.Views
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // パブリックメソッド
-        public void Initialize() => BSMLSettings.instance.AddSettingsMenu("DathBomb", this.ResourceName, this);
+        public void Initialize()
+        {
+            GameplaySetup.instance?.RemoveTab("DathBomb");
+            GameplaySetup.instance?.AddTab("DathBomb", this.ResourceName, this);
+        }
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // プライベートメソッド

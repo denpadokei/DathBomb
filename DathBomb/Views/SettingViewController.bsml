@@ -1,5 +1,5 @@
 ﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
   <settings-container>
-    <bool-setting text='Is bomb enable.' value='is-bomb-enable'></bool-setting>
+    <bool-setting text='Is bomb enable.' value='is-bomb-enable' bind-value='true' apply-on-change='true'></bool-setting>
   </settings-container>
 </bg>

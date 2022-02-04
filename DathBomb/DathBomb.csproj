@@ -190,7 +190,7 @@
     <None Include="UserData\DathBomb\Staff.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Views\SettingViewController.bsml" />
+    <EmbeddedResource Include="Views\SettingViewController.bsml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BeatSaberModdingTools.Tasks">

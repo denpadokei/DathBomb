@@ -1,4 +1,5 @@
-﻿using DathBomb.Models;
+﻿using DathBomb.Configuration;
+using DathBomb.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections;
@@ -118,6 +119,9 @@ namespace DathBomb
             }
             while (DummyBomb.Senders.TryDequeue(out _)) {
 
+            }
+            if (!PluginConfig.Instance.IsBombEnable) {
+                return;
             }
             if (!Directory.Exists(_dirPath)) {
                 Directory.CreateDirectory(_dirPath);
