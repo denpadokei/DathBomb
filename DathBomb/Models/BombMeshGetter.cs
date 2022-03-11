@@ -32,7 +32,7 @@ namespace DathBomb.Models
         public void Initialize()
         {
             try {
-                var bomb = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(x => x.name == "BombNote");
+                var bomb = Resources.FindObjectsOfTypeAll<MonoBehaviour>().FirstOrDefault(x => x.name == "BombNote").gameObject;
                 BombGO = GameObject.Instantiate(bomb);
                 BombGO.SetActive(false);
             }
