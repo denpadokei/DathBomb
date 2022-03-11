@@ -36,11 +36,10 @@ namespace DathBomb
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // パブリックメソッド
         [Inject]
-        public void Constractor(IAudioTimeSource controller, BombEffectSpowner spowner, GameplayCoreSceneSetupData data)
+        public void Constractor(IAudioTimeSource controller, BombEffectSpowner spowner, IReadonlyBeatmapData beatmapData)
         {
             this.source = controller;
-            var diff = data.difficultyBeatmap;
-            var objectData = diff.beatmapData.beatmapObjectsData.Where(x => x is NoteData).Select(x => x as NoteData).ToArray();
+            var objectData = beatmapData.allBeatmapDataItems.Where(x => x is NoteData).Select(x => x as NoteData).ToArray();
             noteCount = objectData.Length;
             var interval = Mathf.Floor(this.source.songEndTime / noteCount);
         }

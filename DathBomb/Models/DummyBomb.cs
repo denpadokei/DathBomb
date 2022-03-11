@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace DathBomb.Models
 {
-    public class DummyBomb : MonoBehaviour, INoteControllerDidInitEvent
+    public class DummyBomb : MonoBehaviour, INoteControllerDidInitEvent, INoteControllerNoteDidStartJumpEvent
     {
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // プロパティ
@@ -27,12 +27,14 @@ namespace DathBomb.Models
             if (CustomNoteUtil.TryGetGameNoteController(this.gameObject, out var component)) {
                 this.Controller = component;
                 this.Controller.didInitEvent.Add(this);
+                this.Controller.noteDidStartJumpEvent.Add(this);
             }
             this._noteCube = this.gameObject.transform.Find("NoteCube");
             if (CustomNoteUtil.TryGetColorNoteVisuals(this.gameObject, out var visuals)) {
                 this._colorManager = visuals.GetField<ColorManager, ColorNoteVisuals>("_colorManager");
             }
-            this._noteMesh = this.GetComponentInChildren<MeshRenderer>();
+            var disappearingArrowController = this.gameObject.GetComponentInParent<DisappearingArrowController>();
+            this._noteMesh = disappearingArrowController.GetField<MeshRenderer, DisappearingArrowControllerBase<GameNoteController>>("_cubeMeshRenderer");
             this._selectedNoteIndex = CustomNoteUtil.SelectedNoteIndex;
             this._isCustomNote = CustomNoteUtil.IsInstallCustomNote && 1 <= this._selectedNoteIndex;
         }
@@ -40,6 +42,7 @@ namespace DathBomb.Models
         {
             if (this.Controller != null) {
                 this.Controller.didInitEvent.Remove(this);
+                this.Controller.noteDidStartJumpEvent.Remove(this);
             }
             if (this._bombMesh != null) {
                 Destroy(this._bombMesh);
@@ -50,12 +53,18 @@ namespace DathBomb.Models
         #region // パブリックメソッド
         public void HandleNoteControllerDidInit(NoteControllerBase noteController)
         {
-            if (this.Controller.gameNoteType == GameNoteController.GameNoteType.Ghost) {
+            if (this.Controller.noteVisualModifierType == NoteVisualModifierType.Ghost) {
                 return;
             }
             if (this._bombMesh == null && BombMeshGetter.BombMesh != null) {
                 this._bombMesh = Instantiate(BombMeshGetter.BombMesh);
                 this._bombMesh.gameObject.transform.SetParent(this._noteCube, false);
+            }
+        }
+        public void HandleNoteControllerNoteDidStartJump(NoteController noteController)
+        {
+            if (this.Controller.noteVisualModifierType == NoteVisualModifierType.Ghost) {
+                return;
             }
             var color = this._colorManager.ColorForType(noteController.noteData.colorType);
             this.SetActiveBomb(Senders.TryDequeue(out var sender), in color, this._isCustomNote);
