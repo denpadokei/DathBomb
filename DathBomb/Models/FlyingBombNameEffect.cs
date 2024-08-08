@@ -42,6 +42,7 @@ namespace DathBomb.Models
                 this._image.rectTransform.localPosition = Vector3.zero;
                 this._image.material = this._noGlow;
                 this._image.enabled = false;
+                this._image.color = new Color(1, 1, 1, 1);
             }
             catch (Exception e) {
                 Logger.Error(e);
