@@ -182,7 +182,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Directory.Build.props" Condition="Exists('Directory.Build.props')" />
-    <None Include="Directory.Build.targets" Condition="Exists('Directory.Build.targets')" />
     <None Include="DathBomb.csproj.user" Condition="Exists('DathBomb.csproj.user')" />
     <None Include="UserData\DathBombFontAssets\Main\mplus-1m-medium sdf.assets">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -194,7 +193,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BeatSaberModdingTools.Tasks">
-      <Version>1.2.3</Version>
+      <Version>2.0.0-beta7</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
