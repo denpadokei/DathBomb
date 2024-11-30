@@ -1,7 +1,4 @@
-﻿using SiraUtil;
-using DathBomb.HarmonyPathches;
-using DathBomb.Models;
-using DathBomb.Utilities;
+﻿using DathBomb.Models;
 using Zenject;
 
 namespace DathBomb.Installers
@@ -10,10 +7,10 @@ namespace DathBomb.Installers
     {
         public override void InstallBindings()
         {
-            this.Container.BindInterfacesAndSelfTo<DathBombController>().FromNewComponentOnNewGameObject().AsSingle().NonLazy();
-            this.Container.BindInterfacesAndSelfTo<BombEffectSpowner>().FromNewComponentOnNewGameObject().AsSingle().NonLazy();
-            this.Container.BindInterfacesAndSelfTo<BombMeshGetter>().AsSingle().NonLazy();
-            this.Container.BindInterfacesAndSelfTo<BeatmapUtil>().AsSingle().NonLazy();
+            _ = this.Container.BindInterfacesAndSelfTo<DathBombController>().FromNewComponentOnNewGameObject().AsSingle().NonLazy();
+            _ = this.Container.BindInterfacesAndSelfTo<BombEffectSpowner>().FromNewComponentOnNewGameObject().AsSingle().NonLazy();
+            _ = this.Container.BindInterfacesAndSelfTo<BombMeshGetter>().AsSingle().NonLazy();
+            _ = this.Container.BindInterfacesAndSelfTo<BeatmapUtil>().AsSingle().NonLazy();
         }
     }
 }

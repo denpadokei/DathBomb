@@ -1,9 +1,5 @@
-﻿using DathBomb.Utilities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DathBomb.Models;
+using DathBomb.Utilities;
 using Zenject;
 
 namespace DathBomb.Installers
@@ -12,7 +8,10 @@ namespace DathBomb.Installers
     {
         public override void InstallBindings()
         {
-            this.Container.BindInterfacesAndSelfTo<CustomNoteUtil>().AsCached().NonLazy();
+            _ = this.Container.BindInterfacesAndSelfTo<CustomNoteUtil>().AsCached().NonLazy();
+            _ = this.Container.BindInterfacesAndSelfTo<FontAssetReader>().FromNewComponentOnNewGameObject().AsSingle().NonLazy();
+            _ = this.Container.BindInterfacesAndSelfTo<ImageLoader>().FromNewComponentOnNewGameObject().AsSingle().NonLazy();
+            _ = this.Container.BindInterfacesAndSelfTo<ParticleAssetLoader>().FromNewComponentOnNewGameObject().AsSingle().NonLazy();
         }
     }
 }

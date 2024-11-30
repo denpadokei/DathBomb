@@ -1,18 +1,10 @@
 ﻿using DathBomb.Installers;
-using DathBomb.Models;
-using DathBomb.Utilities;
 using HarmonyLib;
 using IPA;
 using IPA.Config;
 using IPA.Config.Stores;
 using SiraUtil.Zenject;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using IPALogger = IPA.Logging.Logger;
 
 namespace DathBomb
@@ -41,15 +33,13 @@ namespace DathBomb
             zenjector.Install<DathBombAppInstaller>(Location.App);
             zenjector.Install<DathBombGameInstaller>(Location.Player);
             zenjector.Install<DathBombMenuInstaller>(Location.Menu);
-            harmony = new Harmony(HARMONY_ID);
+            this.harmony = new Harmony(HARMONY_ID);
         }
 
         [OnStart]
         public void OnApplicationStart()
         {
             Log.Debug("OnApplicationStart");
-            FontAssetReader.TouchInstance();
-            ImageLoader.TouchInstance();
         }
 
         [OnExit]

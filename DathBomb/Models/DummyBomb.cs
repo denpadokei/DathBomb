@@ -1,6 +1,5 @@
-﻿using IPA.Utilities;
-using DathBomb.HarmonyPathches;
-using DathBomb.Utilities;
+﻿using DathBomb.Utilities;
+using IPA.Utilities;
 using System.Collections.Concurrent;
 using UnityEngine;
 
@@ -24,13 +23,15 @@ namespace DathBomb.Models
         #region // オーバーライドメソッド
         protected void Awake()
         {
-            if (CustomNoteUtil.TryGetGameNoteController(this.gameObject, out var component)) {
+            if (CustomNoteUtil.TryGetGameNoteController(this.gameObject, out var component))
+            {
                 this.Controller = component;
                 this.Controller.didInitEvent.Add(this);
                 this.Controller.noteDidStartJumpEvent.Add(this);
             }
             this._noteCube = this.gameObject.transform.Find("NoteCube");
-            if (CustomNoteUtil.TryGetColorNoteVisuals(this.gameObject, out var visuals)) {
+            if (CustomNoteUtil.TryGetColorNoteVisuals(this.gameObject, out var visuals))
+            {
                 this._colorManager = visuals.GetField<ColorManager, ColorNoteVisuals>("_colorManager");
             }
             var disappearingArrowController = this.gameObject.GetComponentInParent<DisappearingArrowController>();
@@ -40,11 +41,13 @@ namespace DathBomb.Models
         }
         protected void OnDestroy()
         {
-            if (this.Controller != null) {
+            if (this.Controller != null)
+            {
                 this.Controller.didInitEvent.Remove(this);
                 this.Controller.noteDidStartJumpEvent.Remove(this);
             }
-            if (this._bombMesh != null) {
+            if (this._bombMesh != null)
+            {
                 Destroy(this._bombMesh);
             }
         }
@@ -53,17 +56,20 @@ namespace DathBomb.Models
         #region // パブリックメソッド
         public void HandleNoteControllerDidInit(NoteControllerBase noteController)
         {
-            if (this.Controller.noteVisualModifierType == NoteVisualModifierType.Ghost) {
+            if (this.Controller.noteVisualModifierType == NoteVisualModifierType.Ghost)
+            {
                 return;
             }
-            if (this._bombMesh == null && BombMeshGetter.BombMesh != null) {
+            if (this._bombMesh == null && BombMeshGetter.BombMesh != null)
+            {
                 this._bombMesh = Instantiate(BombMeshGetter.BombMesh);
                 this._bombMesh.gameObject.transform.SetParent(this._noteCube, false);
             }
         }
         public void HandleNoteControllerNoteDidStartJump(NoteController noteController)
         {
-            if (this.Controller.noteVisualModifierType == NoteVisualModifierType.Ghost) {
+            if (this.Controller.noteVisualModifierType == NoteVisualModifierType.Ghost)
+            {
                 return;
             }
             var color = this._colorManager.ColorForType(noteController.noteData.colorType);
@@ -75,10 +81,12 @@ namespace DathBomb.Models
         #region // プライベートメソッド
         private void SetActiveBomb(bool active, in Color noteColor, bool isInstallCustomNote = false)
         {
-            if (!isInstallCustomNote && this._noteMesh != null) {
+            if (!isInstallCustomNote && this._noteMesh != null)
+            {
                 this._noteMesh.forceRenderingOff = active;
             }
-            if (this._bombMesh != null) {
+            if (this._bombMesh != null)
+            {
                 this._bombMesh.enabled = active;
                 this._bombMesh.material.SetColor(s_bombColorId, noteColor);
             }

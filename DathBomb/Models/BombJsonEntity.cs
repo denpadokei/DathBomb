@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DathBomb.Models
 {
@@ -13,12 +10,12 @@ namespace DathBomb.Models
 
         public BombJsonEntity()
         {
-            Staff = new ReadOnlyCollection<BombTextEntity>(Array.Empty<BombTextEntity>());
+            this.Staff = new ReadOnlyCollection<BombTextEntity>(Array.Empty<BombTextEntity>());
         }
 
         public BombJsonEntity(IList<BombTextEntity> staff)
         {
-            Staff = new ReadOnlyCollection<BombTextEntity>(staff);
+            this.Staff = new ReadOnlyCollection<BombTextEntity>(staff);
         }
     }
 }

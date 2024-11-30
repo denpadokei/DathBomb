@@ -29,7 +29,8 @@ namespace DathBomb.Models
             this._onFree = onFree;
             this._freeObjects = new ConcurrentStack<T>();
 
-            for (var i = 0; i < initialCount; i++) {
+            for (var i = 0; i < initialCount; i++)
+            {
                 this._freeObjects.Push(this.InternalAlloc());
             }
         }
@@ -48,7 +49,8 @@ namespace DathBomb.Models
         /// <returns></returns>
         public T Alloc()
         {
-            if (!this._freeObjects.TryPop(out var obj) || !obj) {
+            if (!this._freeObjects.TryPop(out var obj) || !obj)
+            {
                 obj = this.InternalAlloc();
                 Logger.Debug($"InternalAlloc() in Alloc! : {obj}");
             }
@@ -62,7 +64,8 @@ namespace DathBomb.Models
         /// <param name="obj"></param>
         public void Free(T obj)
         {
-            if (!obj) {
+            if (!obj)
+            {
                 Logger.Debug($"{nameof(obj)} is Destroyed.");
                 return;
             }
@@ -72,9 +75,12 @@ namespace DathBomb.Models
 
         protected virtual void Dispose(bool disposing)
         {
-            if (!this.disposedValue) {
-                if (disposing) {
-                    while (this._freeObjects.TryPop(out var obj)) {
+            if (!this.disposedValue)
+            {
+                if (disposing)
+                {
+                    while (this._freeObjects.TryPop(out var obj))
+                    {
                         UnityEngine.Object.Destroy(obj.gameObject);
                     }
                     this._freeObjects.Clear();

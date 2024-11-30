@@ -1,10 +1,4 @@
-﻿using HMUI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace DathBomb.Models
 {
@@ -21,7 +15,7 @@ namespace DathBomb.Models
         public Vector3Wrapper TargetPos { get; set; }
         public BombTextEntity()
         {
-            TargetPos = new Vector3Wrapper(new Vector3(0f, 1.8f, 4f));
+            this.TargetPos = new Vector3Wrapper(new Vector3(0f, 1.8f, 4f));
         }
     }
 }

@@ -4,25 +4,28 @@ using System;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 namespace DathBomb.Models
 {
     public class FlyingBombNameEffect : FlyingObjectEffect
     {
-        private void Awake()
+        public void Awake()
         {
-            try {
+            try
+            {
                 this.SetField<FlyingObjectEffect, AnimationCurve>("_moveAnimationCurve",
                     new AnimationCurve(new Keyframe(0f, 0f, 0f, 2f), new Keyframe(0.18f, 1f, 0f, 0.3f), new Keyframe(1f, 1f, 0f, 0f)));
 
-                if (this._noGlow == null) {
+                if (this._noGlow == null)
+                {
                     this._noGlow = Instantiate(Resources.FindObjectsOfTypeAll<Material>().FirstOrDefault(x => x.name == "UINoGlow"));
                 }
 
-                this.gameObject.AddComponent<RectTransform>();
-                this.gameObject.AddComponent<Canvas>();
-                this.gameObject.AddComponent<CanvasRenderer>();
-                this.gameObject.AddComponent<CurvedCanvasSettings>();
+                _ = this.gameObject.AddComponent<RectTransform>();
+                _ = this.gameObject.AddComponent<Canvas>();
+                _ = this.gameObject.AddComponent<CanvasRenderer>();
+                _ = this.gameObject.AddComponent<CurvedCanvasSettings>();
                 this._rootCanvas = this.gameObject.GetComponent<Canvas>();
                 this._rootCanvas.transform.localPosition = Vector3.zero;
                 this._rootCanvas.transform.localRotation = Quaternion.identity;
@@ -30,8 +33,9 @@ namespace DathBomb.Models
                 this._rootCanvas.gameObject.layer = 5;
                 this._text = new GameObject("text", typeof(TextMeshPro)).GetComponent<TextMeshPro>();
                 this._text.rectTransform.SetParent(this._rootCanvas.transform as RectTransform, false);
-                if (FontAssetReader.instance.MainFont != null) {
-                    this._text.font = FontAssetReader.instance.MainFont;
+                if (this._fontAssetReader.MainFont != null)
+                {
+                    this._text.font = this._fontAssetReader.MainFont;
                 }
                 this._text.alignment = TextAlignmentOptions.Center;
                 this._text.fontSize = 30;
@@ -44,20 +48,24 @@ namespace DathBomb.Models
                 this._image.enabled = false;
                 this._image.color = new Color(1, 1, 1, 1);
             }
-            catch (Exception e) {
+            catch (Exception e)
+            {
                 Logger.Error(e);
             }
         }
 
         public void OnDestroy()
         {
-            if (this._text != null) {
+            if (this._text != null)
+            {
                 Destroy(this._text);
             }
-            if (this._image != null) {
+            if (this._image != null)
+            {
                 Destroy(this._image);
             }
-            if (this._noGlow != null) {
+            if (this._noGlow != null)
+            {
                 Destroy(this._noGlow);
             }
         }
@@ -74,17 +82,19 @@ namespace DathBomb.Models
 
         public virtual void InitAndPresent(string text, Sprite image, float duration, Vector3 targetPos, Quaternion rotation, Color color, float fontSize, float imageScale, bool shake)
         {
-            if (image != null) {
+            if (image != null)
+            {
                 this._image.rectTransform.sizeDelta = new Vector2(image.texture.width, image.texture.height);
                 this._image.rectTransform.localScale = Vector3.one * imageScale;
                 this._image.sprite = image;
                 this._image.enabled = true;
                 this._image.SetAllDirty();
             }
-            else {
+            else
+            {
                 this._image.enabled = false;
             }
-            
+
             this._textcolor = color;
             this._text.text = text;
             this._text.fontSize = fontSize;
@@ -97,11 +107,18 @@ namespace DathBomb.Models
             this._image.color = Color.white.ColorWithAlpha(this._fadeAnimationCurve.Evaluate(t));
         }
 
+        [Inject]
+        public void Constractor(FontAssetReader fontAssetReader)
+        {
+            this._fontAssetReader = fontAssetReader;
+        }
+
         private Canvas _rootCanvas;
         private TextMeshPro _text;
         private ImageView _image;
         private Material _noGlow;
         private Color _textcolor;
         private readonly AnimationCurve _fadeAnimationCurve = new AnimationCurve(new Keyframe(0f, 1f, 0f, 0f), new Keyframe(0.9f, 1f, 0f, -20f), new Keyframe(1f, 0f, 20f, 0f));
+        private FontAssetReader _fontAssetReader;
     }
 }
