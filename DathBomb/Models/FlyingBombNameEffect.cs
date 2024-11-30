@@ -10,7 +10,8 @@ namespace DathBomb.Models
 {
     public class FlyingBombNameEffect : FlyingObjectEffect
     {
-        public void Awake()
+
+        public void Initialize()
         {
             try
             {
@@ -22,10 +23,6 @@ namespace DathBomb.Models
                     this._noGlow = Instantiate(Resources.FindObjectsOfTypeAll<Material>().FirstOrDefault(x => x.name == "UINoGlow"));
                 }
 
-                _ = this.gameObject.AddComponent<RectTransform>();
-                _ = this.gameObject.AddComponent<Canvas>();
-                _ = this.gameObject.AddComponent<CanvasRenderer>();
-                _ = this.gameObject.AddComponent<CurvedCanvasSettings>();
                 this._rootCanvas = this.gameObject.GetComponent<Canvas>();
                 this._rootCanvas.transform.localPosition = Vector3.zero;
                 this._rootCanvas.transform.localRotation = Quaternion.identity;
@@ -120,5 +117,15 @@ namespace DathBomb.Models
         private Color _textcolor;
         private readonly AnimationCurve _fadeAnimationCurve = new AnimationCurve(new Keyframe(0f, 1f, 0f, 0f), new Keyframe(0.9f, 1f, 0f, -20f), new Keyframe(1f, 0f, 20f, 0f));
         private FontAssetReader _fontAssetReader;
+
+        public class Pool : MemoryPool<FlyingBombNameEffect>
+        {
+            protected override void OnCreated(FlyingBombNameEffect item)
+            {
+                base.OnCreated(item);
+                item.Initialize();
+
+            }
+        }
     }
 }
