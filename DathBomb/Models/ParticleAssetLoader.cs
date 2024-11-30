@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace DathBomb.Models
 {
-    public class ParticleAssetLoader : PersistentSingleton<ParticleAssetLoader>
+    public class ParticleAssetLoader : MonoBehaviour
     {
         private static readonly string FontAssetPath = Path.Combine(Environment.CurrentDirectory, "UserData", "SPCParticleAssets");
 
@@ -16,37 +16,43 @@ namespace DathBomb.Models
 
         public bool IsInitialized { get; private set; } = false;
 
-        private ParticleSystem _particle = null;
-
-        public ParticleSystem Particle
+        public ParticleSystem Particle { get; private set; } = null;
+        public void Awake()
         {
-            get => this._particle;
-            private set => this._particle = value;
+            _ = this.StartCoroutine(this.LoadParticle());
         }
-        private void Awake() => HMMainThreadDispatcher.instance.Enqueue(this.LoadParticle());
+
         public IEnumerator LoadParticle()
         {
             this.IsInitialized = false;
             yield return new WaitWhile(() => Default == null);
-            if (this.Particle != null) {
+            if (this.Particle != null)
+            {
                 Destroy(this.Particle);
             }
-            if (!Directory.Exists(FontAssetPath)) {
-                Directory.CreateDirectory(FontAssetPath);
+            if (!Directory.Exists(FontAssetPath))
+            {
+                _ = Directory.CreateDirectory(FontAssetPath);
             }
             AssetBundle bundle = null;
-            foreach (var filename in Directory.EnumerateFiles(FontAssetPath, "*.particle", SearchOption.TopDirectoryOnly)) {
-                using (var fs = File.OpenRead(filename)) {
+            foreach (var filename in Directory.EnumerateFiles(FontAssetPath, "*.particle", SearchOption.TopDirectoryOnly))
+            {
+                using (var fs = File.OpenRead(filename))
+                {
                     bundle = AssetBundle.LoadFromStream(fs);
                 }
-                if (bundle != null) {
+                if (bundle != null)
+                {
                     break;
                 }
             }
-            if (bundle != null) {
-                foreach (var bundleItem in bundle.GetAllAssetNames()) {
+            if (bundle != null)
+            {
+                foreach (var bundleItem in bundle.GetAllAssetNames())
+                {
                     var asset = bundle.LoadAsset<GameObject>(Path.GetFileNameWithoutExtension(bundleItem));
-                    if (asset != null) {
+                    if (asset != null)
+                    {
                         this.Particle = asset.GetComponent<ParticleSystem>();
                         var renderer = this.Particle.GetComponent<ParticleSystemRenderer>();
                         renderer.material = Instantiate(Default);

@@ -1,6 +1,5 @@
 ﻿using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.GameplaySetup;
-using BeatSaberMarkupLanguage.Settings;
 using BeatSaberMarkupLanguage.ViewControllers;
 using DathBomb.Configuration;
 using Zenject;
@@ -33,8 +32,8 @@ namespace DathBomb.Views
         #region // パブリックメソッド
         public void Initialize()
         {
-            GameplaySetup.instance?.RemoveTab("DathBomb");
-            GameplaySetup.instance?.AddTab("DathBomb", this.ResourceName, this);
+            GameplaySetup.Instance?.RemoveTab("DathBomb");
+            GameplaySetup.Instance?.AddTab("DathBomb", this.ResourceName, this);
         }
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*

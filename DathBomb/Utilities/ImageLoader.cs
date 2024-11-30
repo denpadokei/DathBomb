@@ -1,16 +1,12 @@
-﻿using HMUI;
-using System;
+﻿using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
+using Zenject;
 
 namespace DathBomb.Utilities
 {
-    public class ImageLoader : PersistentSingleton<ImageLoader>
+    public class ImageLoader : MonoBehaviour, IInitializable
     {
         private static readonly string _dirPath = Path.Combine(Environment.CurrentDirectory, "UserData", "DathBomb");
         private static readonly string _imageDirPath = Path.Combine(_dirPath, "Images");
@@ -20,7 +16,7 @@ namespace DathBomb.Utilities
         {
             this.GetImageSize(datas, extention, out var width, out var height);
             var result = new Texture2D(width, height, TextureFormat.ARGB32, false, true);
-            result.LoadImage(datas);
+            _ = result.LoadImage(datas);
             return result;
         }
 
@@ -29,13 +25,17 @@ namespace DathBomb.Utilities
             width = 0;
             height = 0;
 
-            switch (extention) {
+            switch (extention)
+            {
                 case ImageExtention.JPEG:
-                    for (var i = 0; i < datas.Length; i++) {
-                        if (datas[i] == 0xff) {
-                            if (datas[i + 1] == 0xc0) {
-                                height = datas[i + 5] * 256 + datas[i + 6];
-                                width = datas[i + 7] * 256 + datas[i + 8];
+                    for (var i = 0; i < datas.Length; i++)
+                    {
+                        if (datas[i] == 0xff)
+                        {
+                            if (datas[i + 1] == 0xc0)
+                            {
+                                height = (datas[i + 5] * 256) + datas[i + 6];
+                                width = (datas[i + 7] * 256) + datas[i + 8];
                                 break;
                             }
                         }
@@ -43,9 +43,10 @@ namespace DathBomb.Utilities
                     break;
                 case ImageExtention.PNG:
                     var buf = new byte[8];
-                    using (var ms = new MemoryStream(datas)) {
-                        ms.Seek(16, SeekOrigin.Begin);
-                        ms.Read(buf, 0, 8);
+                    using (var ms = new MemoryStream(datas))
+                    {
+                        _ = ms.Seek(16, SeekOrigin.Begin);
+                        _ = ms.Read(buf, 0, 8);
                     }
                     width = (buf[0] << 24) | (buf[1] << 16) | (buf[2] << 8) | buf[3];
                     height = (buf[4] << 24) | (buf[5] << 16) | (buf[6] << 8) | buf[7];
@@ -55,27 +56,27 @@ namespace DathBomb.Utilities
             }
         }
 
-        public void Awake()
+        public void OnDestroy()
         {
             this.Images.Clear();
-            if (!Directory.Exists(_imageDirPath)) {
-                Directory.CreateDirectory(_imageDirPath);
+        }
+
+        public void Initialize()
+        {
+            this.Images.Clear();
+            if (!Directory.Exists(_imageDirPath))
+            {
+                _ = Directory.CreateDirectory(_imageDirPath);
             }
-            foreach (var imagePath in Directory.EnumerateFiles(_imageDirPath, "*.png", SearchOption.TopDirectoryOnly)) {
-                byte[] datas = null;
-                datas = File.ReadAllBytes(imagePath);
-                var extention = Path.GetExtension(imagePath);
+            foreach (var imagePath in Directory.EnumerateFiles(_imageDirPath, "*.png", SearchOption.TopDirectoryOnly))
+            {
+                var datas = File.ReadAllBytes(imagePath);
+                _ = Path.GetExtension(imagePath);
                 var extentionType = ImageExtention.PNG;
                 var textuer = this.CreateTextuer2D(datas, extentionType);
                 var createdSprite = Sprite.Create(textuer, new Rect(0, 0, textuer.width, textuer.height), Vector2.one * 0.5f);
-                this.Images.TryAdd(Path.GetFileName(imagePath), createdSprite);
+                _ = this.Images.TryAdd(Path.GetFileName(imagePath), createdSprite);
             }
-        }
-
-        protected override void OnDestroy()
-        {
-            base.OnDestroy();
-            Images.Clear();
         }
 
         public enum ImageExtention

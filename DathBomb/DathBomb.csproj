@@ -50,9 +50,29 @@
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="BeatSaber.ViewSystem, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\BeatSaber.ViewSystem.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="BGLib.DotnetExtension, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\BGLib.DotnetExtension.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="BGLib.UnityExtension, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\BGLib.UnityExtension.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="BSML">
       <HintPath>$(BeatSaberDir)\Plugins\BSML.dll</HintPath>
       <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DataModels, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\DataModels.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="GameplayCore">
@@ -182,7 +202,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Directory.Build.props" Condition="Exists('Directory.Build.props')" />
-    <None Include="Directory.Build.targets" Condition="Exists('Directory.Build.targets')" />
     <None Include="DathBomb.csproj.user" Condition="Exists('DathBomb.csproj.user')" />
     <None Include="UserData\DathBombFontAssets\Main\mplus-1m-medium sdf.assets">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -194,7 +213,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BeatSaberModdingTools.Tasks">
-      <Version>1.2.3</Version>
+      <Version>2.0.0-beta7</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>

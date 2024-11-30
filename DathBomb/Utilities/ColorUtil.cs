@@ -11,9 +11,11 @@ namespace DathBomb.Utilities
         static ColorUtil()
         {
             var dic = new Dictionary<string, Color>();
-            foreach (var colorProp in typeof(Color).GetProperties(BindingFlags.Public | BindingFlags.Static)) {
+            foreach (var colorProp in typeof(Color).GetProperties(BindingFlags.Public | BindingFlags.Static))
+            {
                 var color = colorProp.GetValue(typeof(Color));
-                if (color is Color value) {
+                if (color is Color value)
+                {
                     dic.Add(colorProp.Name, value);
                 }
             }

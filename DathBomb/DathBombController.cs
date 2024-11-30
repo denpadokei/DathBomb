@@ -2,14 +2,10 @@
 using DathBomb.Models;
 using Newtonsoft.Json;
 using System;
-using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
@@ -40,8 +36,8 @@ namespace DathBomb
         {
             this.source = controller;
             var objectData = beatmapData.allBeatmapDataItems.Where(x => x is NoteData).Select(x => x as NoteData).ToArray();
-            noteCount = objectData.Length;
-            var interval = Mathf.Floor(this.source.songEndTime / noteCount);
+            this.noteCount = objectData.Length;
+            var interval = Mathf.Floor(this.source.songEndTime / this.noteCount);
         }
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
@@ -50,13 +46,17 @@ namespace DathBomb
         {
             var entites = new List<BombTextEntity>();
             var imageQueue = new ConcurrentQueue<string>();
-            foreach (var imagePath in Directory.EnumerateFiles(_imageDirPath, "*.png", SearchOption.TopDirectoryOnly)) {
+            foreach (var imagePath in Directory.EnumerateFiles(_imageDirPath, "*.png", SearchOption.TopDirectoryOnly))
+            {
                 imageQueue.Enqueue(imagePath);
             }
-            for (int i = 0; i < 60; i++) {
-                imageQueue.TryDequeue(out var imageName);
-                for (int j = 0; j < 3; j++) {
-                    if (j != 2 && !string.IsNullOrEmpty(imageName)) {
+            for (var i = 0; i < 60; i++)
+            {
+                _ = imageQueue.TryDequeue(out var imageName);
+                for (var j = 0; j < 3; j++)
+                {
+                    if (j != 2 && !string.IsNullOrEmpty(imageName))
+                    {
                         var entity = new BombTextEntity()
                         {
                             Index = j,
@@ -67,7 +67,8 @@ namespace DathBomb
                         };
                         entites.Add(entity);
                     }
-                    else {
+                    else
+                    {
                         var entity = new BombTextEntity()
                         {
                             Index = j,
@@ -95,7 +96,7 @@ namespace DathBomb
         private float nextInterval;
         private DateTime _lastSendTime;
         private bool _enable;
-        private ConcurrentQueue<IGrouping<int, BombTextEntity>> _entities = new ConcurrentQueue<IGrouping<int, BombTextEntity>>();
+        private readonly ConcurrentQueue<IGrouping<int, BombTextEntity>> _entities = new ConcurrentQueue<IGrouping<int, BombTextEntity>>();
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // 構築・破棄
@@ -111,51 +112,60 @@ namespace DathBomb
         {
             // For this particular MonoBehaviour, we only want one instance to exist at any time, so store a reference to it in a static property
             //   and destroy any that are created while one already exists.
-            Plugin.Log?.Debug($"{name}: Awake()");
-            _lastSendTime = DateTime.Now;
-            nextInterval = 0f;
-            while (_entities.TryDequeue(out _)) {
-
+            Plugin.Log?.Debug($"{this.name}: Awake()");
+            this._lastSendTime = DateTime.Now;
+            this.nextInterval = 0f;
+            while (this._entities.TryDequeue(out _))
+            {
             }
-            while (DummyBomb.Senders.TryDequeue(out _)) {
-
+            while (DummyBomb.Senders.TryDequeue(out _))
+            {
             }
             this._enable = PluginConfig.Instance.IsBombEnable;
-            if (!this._enable) {
+            if (!this._enable)
+            {
                 return;
             }
-            if (!Directory.Exists(_dirPath)) {
-                Directory.CreateDirectory(_dirPath);
+            if (!Directory.Exists(_dirPath))
+            {
+                _ = Directory.CreateDirectory(_dirPath);
             }
-            if (!File.Exists(_jsonPath)) {
+            if (!File.Exists(_jsonPath))
+            {
                 this.CreateDefault();
             }
 
             var jsonText = File.ReadAllText(_jsonPath);
             var bombJson = JsonConvert.DeserializeObject<BombJsonEntity>(jsonText);
 
-            foreach (var eneity in bombJson.Staff.GroupBy(x => x.GroupingID).OrderBy(x => x.Key)) {
-                _entities.Enqueue(eneity);
+            foreach (var eneity in bombJson.Staff.GroupBy(x => x.GroupingID).OrderBy(x => x.Key))
+            {
+                this._entities.Enqueue(eneity);
             }
         }
 
         private void Update()
         {
-            if (!this._enable) {
+            if (!this._enable)
+            {
                 return;
             }
-            if (source.songTime == 0) {
-                _lastSendTime = DateTime.Now;
+            if (this.source.songTime == 0)
+            {
+                this._lastSendTime = DateTime.Now;
                 return;
             }
-            if ((DateTime.Now - _lastSendTime).Seconds < nextInterval) {
+            if ((DateTime.Now - this._lastSendTime).Seconds < this.nextInterval)
+            {
                 return;
             }
-            if (_entities.TryDequeue(out var entity)) {
-                foreach (var item in entity.OrderBy(x => x.Index)) {
+            if (this._entities.TryDequeue(out var entity))
+            {
+                foreach (var item in entity.OrderBy(x => x.Index))
+                {
                     DummyBomb.Senders.Enqueue(item);
-                    nextInterval = item.Interval;
-                    _lastSendTime = DateTime.Now;
+                    this.nextInterval = item.Interval;
+                    this._lastSendTime = DateTime.Now;
                 }
             }
         }
@@ -165,7 +175,7 @@ namespace DathBomb
         /// </summary>
         private void OnDestroy()
         {
-            Plugin.Log?.Debug($"{name}: OnDestroy()");
+            Plugin.Log?.Debug($"{this.name}: OnDestroy()");
         }
         #endregion
     }

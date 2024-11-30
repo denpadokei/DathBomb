@@ -15,12 +15,7 @@ namespace DathBomb.Utilities
         public void Init(DiContainer container)
         {
             var loaderType = Type.GetType("CustomNotes.Managers.NoteAssetLoader, CustomNotes");
-            if (loaderType == null) {
-                _loader = null;
-            }
-            else {
-                _loader = container.TryResolve(loaderType);
-            }
+            _loader = loaderType == null ? null : container.TryResolve(loaderType);
         }
 
         static CustomNoteUtil()
@@ -31,7 +26,8 @@ namespace DathBomb.Utilities
         public static bool TryGetColorNoteVisuals(GameObject gameObject, out ColorNoteVisuals colorNoteVisuals)
         {
             colorNoteVisuals = gameObject.GetComponentInChildren<ColorNoteVisuals>();
-            if (colorNoteVisuals == null) {
+            if (colorNoteVisuals == null)
+            {
                 var customColorType = Type.GetType("CustomNotes.Overrides.CustomNoteColorNoteVisuals, CustomNotes");
                 colorNoteVisuals = (ColorNoteVisuals)gameObject.GetComponentInChildren(customColorType);
             }
